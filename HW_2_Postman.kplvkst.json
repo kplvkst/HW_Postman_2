@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "d38c98e7-c6ff-4244-8920-c07ead2bf6c2",
 		"name": "HW_2_Postman",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20776438"
 	},
 	"item": [
 		{
@@ -375,13 +376,13 @@
 							"pm.environment.get(\"salary\");\r",
 							"\r",
 							"// 18. Передать в окружение переменную name\r",
-							"pm.environment.set(\"name\", \"req.name\");\r",
+							"pm.environment.set(\"name\", req.name);\r",
 							"\r",
 							"// 19. Передать в окружение переменную age\r",
-							"pm.environment.set(\"age\", \"req.age\");\r",
+							"pm.environment.set(\"age\", req.age);\r",
 							"\r",
 							"// 20. Передать в окружение переменную salary\r",
-							"pm.environment.set(\"salary\", \"req.salary\");\r",
+							"pm.environment.set(\"salary\", req.salary);\r",
 							"\r",
 							"// 21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.\r",
 							"jsonData.salary.forEach(function(sal) {\r",
